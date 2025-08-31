@@ -101,14 +101,18 @@
   </style>
 </head>
 <body>
-  <header style="display: flex; align-items: center; gap: 15px;">
+  <header style="position: relative; text-align: center; padding: 20px;">
+    <!-- Left aligned photo -->
     <img src="Jawad.jpg" alt="Jawad Baig" 
-         style="width:120px; height:120px; border-radius:50%; object-fit:cover;">
+         style="width:120px; height:120px; border-radius:50%; object-fit:cover; position: absolute; left: 20px; top: 50%; transform: translateY(-50%);">
+  
+    <!-- Centered text -->
     <div>
       <h1>Jawad Baig</h1>
       <p>Unity Game Developer | C# Programmer | 2D/3D</p>
     </div>
   </header>
+  
 
   <nav>
     <a href="#about">About</a>

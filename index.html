@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jawad Baig - Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 40px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+    nav {
+      background: #444;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .project-card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .project-card img {
+      width: 100%;
+      border-radius: 5px;
+    }
+    .project-card h3 {
+      margin-top: 10px;
+    }
+    footer {
+      background: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    .contact a {
+      color: #00bcd4;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Jawad Baig</h1>
+    <p>Unity Game Developer | C# Programmer | Indie Creator</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Crafting engaging, visually stunning games is my passion. As a Unity Game Developer, I specialize in turning imaginative concepts into polished gaming experiences. With hands-on experience in C# scripting, Unity3D, and performance optimization, I ensure every detail of my game is top-notch.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <img src="https://via.placeholder.com/400x200" alt="City Building Tycoon">
+        <h3>City Building Tycoon</h3>
+        <p>A strategy game where players design, build, and manage their own cities.</p>
+      </div>
+      <div class="project-card">
+        <img src="https://via.placeholder.com/400x200" alt="Line Run">
+        <h3>Line Run</h3>
+        <p>A fast-paced endless runner with unique mechanics and dynamic levels.</p>
+      </div>
+      <div class="project-card">
+        <img src="https://via.placeholder.com/400x200" alt="Gravity Glider">
+        <h3>Gravity Glider</h3>
+        <p>A physics-based game where players navigate challenging environments using gravity mechanics.</p>
+      </div>
+      <div class="project-card">
+        <img src="https://via.placeholder.com/400x200" alt="Don't Starve Clone">
+        <h3>Survival Adventure</h3>
+        <p>A survival-style game inspired by 'Don't Starve', focusing on resource gathering and strategy.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p class="contact">Email: <a href="mailto:jawadbaig32@gmail.com">jawadbaig32@gmail.com</a></p>
+    <p class="contact">GitHub: <a href="https://github.com/jawadbaig32" target="_blank">github.com/jawadbaig32</a></p>
+    <p class="contact">LinkedIn: <a href="#">linkedin.com/in/jawadbaig32</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Jawad Baig. All rights reserved.</p>
+  </footer>
+</body>
+</html>

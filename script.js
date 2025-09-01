@@ -294,7 +294,7 @@ function initializeContactForm() {
 
     if (contactForm) {
         contactForm.addEventListener('submit', function (e) {
-            e.preventDefault();
+            e.preventDefault(); // prevent default form submission
 
             const formData = new FormData(this);
             const name = formData.get('name');
@@ -313,14 +313,17 @@ function initializeContactForm() {
                 return;
             }
 
-            // Create mailto link
-            const mailtoLink = `mailto:contact@jawadbaig.dev?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
+            // WhatsApp number in international format (no + or spaces)
+            const whatsappNumber = "923124331656"; // <-- replace with your number
 
-            // Open email client
-            window.location.href = mailtoLink;
+            // Construct WhatsApp message
+            const whatsappMessage = `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}`;
 
-            // Show success message
-            showNotification('Email client opened! Thank you for your message.', 'success');
+            // Open WhatsApp chat in new tab
+            window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`, '_blank');
+
+            // Show success notification
+            showNotification('WhatsApp chat opened! Please send your message.', 'success');
 
             // Reset form
             this.reset();

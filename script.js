@@ -80,14 +80,14 @@ function initializeNavigation() {
             if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
                 // Remove active class from all nav links
                 navLinks.forEach(link => {
-                    link.classList.remove('text-primary-400');
+                    link.classList.remove('text-green-400');
                     link.classList.add('text-gray-300');
                 });
 
                 // Add active class to current section's nav link
                 const activeLink = document.querySelector(`a[href="#${sectionId}"]`);
                 if (activeLink) {
-                    activeLink.classList.add('text-primary-400');
+                    activeLink.classList.add('text-green-400');
                     activeLink.classList.remove('text-gray-300');
                 }
             }

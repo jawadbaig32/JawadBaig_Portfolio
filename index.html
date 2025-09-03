@@ -179,6 +179,8 @@
                             class="nav-link text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
                         <a href="#portfolio"
                             class="nav-link text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium ">Portfolio</a>
+                        <a href="#blogs"
+                            class="nav-link text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium ">Blogs</a>
                         <a href="#services"
                             class="nav-link text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Services</a>
                         <a href="#contact"
@@ -209,6 +211,8 @@
                     class="mobile-nav-link block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 rounded-md">About</a>
                 <a href="#portfolio"
                     class="mobile-nav-link block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 rounded-md">Portfolio</a>
+                <a href="#blogs"
+                    class="mobile-nav-link block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 rounded-md">Blogs</a>    
                 <a href="#services"
                     class="mobile-nav-link block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 rounded-md">Services</a>
                 <a href="#contact"
@@ -767,8 +771,355 @@ Passionate about turning creative ideas into immersive player experiences.
         </div>
     </section>
 
+    <section id="blogs" class="py-20 bg-gray-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">
+                    My
+                    <span
+                        class="bg-gradient-to-r from-green-400 to-green-400 bg-clip-text text-transparent">Blogs</span>
+                </h2>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+                    Explore short, insightful blogs on Unity Game Development, tips, and industry trends
+                </p>
+            </div>
+
+            <!-- Portfolio Filter -->
+            <div class="flex flex-wrap justify-center mb-12 space-x-2 space-y-2">
+                <!-- <button class="portfolio-filter active px-6 py-2 rounded-full bg-green-600 text-white font-medium"
+                    data-filter="all">
+                     Best Games
+                </button> -->
+                <!-- <button
+                    class="portfolio-filter px-6 py-2 rounded-full bg-gray-800 text-gray-300 hover:bg-gray-700 font-medium transition-colors"
+                    data-filter="mobile">
+                    Mobile
+                </button>
+                <button
+                    class="portfolio-filter px-6 py-2 rounded-full bg-gray-800 text-gray-300 hover:bg-gray-700 font-medium transition-colors"
+                    data-filter="web">
+                    Web
+                </button>
+                <button
+                    class="portfolio-filter px-6 py-2 rounded-full bg-gray-800 text-gray-300 hover:bg-gray-700 font-medium transition-colors"
+                    data-filter="ai">
+                    AI
+                </button> -->
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- City Building Tycoon-->
+                <div class="portfolio-item group relative bg-gray-800 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-300 hover-lift"
+                    data-category="web">
+                    <div class="relative overflow-hidden">
+                        <img src="CityBuildingTycoon.png"
+                            alt="E-Commerce Platform"
+                            class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                        <div
+                            class="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="flex space-x-3">
+                                <!-- <a href="#" target="_blank"
+                                    class="flex items-center justify-center w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-colors">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a> -->
+                                 <div class="flex space-x-3">
+                                            <a href="https://drive.google.com/file/d/1Iuph2Md-bOJNkazI2mGxSVHC2r-vKegG/view?usp=drive_link" target="_blank"
+                                                class="flex items-center justify-center w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-colors">
+                                                <i class="fab fa-google-play"></i>
+                                            </a>
+                                        </div>
+                                <!-- <a href="https://github.com/jawadbaig32" target="_blank"
+                                    class="flex items-center justify-center w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-colors">
+                                    <i class="fab fa-github"></i>
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <!-- <div class="flex items-center space-x-2 mb-2">
+                            <span class="px-2 py-1 bg-blue-600/20 text-blue-300 rounded text-xs font-medium">Web</span>
+                            <span class="px-2 py-1 bg-green-600/20 text-green-300 rounded text-xs font-medium">E-Commerce</span>
+                        </div> -->
+                        <h3 class="text-xl font-bold mb-2 text-white">City Building Tycoon</h3>
+                        <p class="text-gray-400 mb-4 text-justify">
+                            Implementing core gameplay systems, mechanics, progression, and Firebase cloud saving, utilizing asset store environments, custom UI design, and optimization to deliver an engaging simulation experience.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">C#</span>
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">Firebase</span>
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">AdMob</span>
+                        </div>
+                    </div>
+                </div>
+                            
+                <!-- Gravity Glider -->
+                <div class="portfolio-item group relative bg-gray-800 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-300 hover-lift"
+                    data-category="web">
+                    <div class="relative overflow-hidden">
+                        <img src="GravityGlider.png" alt="Task Management" style="margin-top: 2px;"
+                            class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                        <div class="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="flex space-x-3">
+
+                                <div class="absolute bottom-0 left-0 right-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                        <div class="flex space-x-3">
+                                            <a href="https://drive.google.com/file/d/1kNqOBhzywDqI1GPcMVnSwtxzEXZMaPEy/view?usp=drive_link" target="_blank"
+                                                class="flex items-center justify-center w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-colors">
+                                                <i class="fab fa-google-play"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                <!-- <a href="#" target="_blank"
+                                    class="flex items-center justify-center w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-colors">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a> -->
+                                <!-- <a href="https://github.com/jawadbaig32" target="_blank"
+                                    class="flex items-center justify-center w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-colors">
+                                    <i class="fab fa-github"></i>
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <!-- <div class="flex items-center space-x-2 mb-2">
+                            <span class="px-2 py-1 bg-blue-600/20 text-blue-300 rounded text-xs font-medium">Web</span>
+                            <span class="px-2 py-1 bg-purple-600/20 text-purple-300 rounded text-xs font-medium">Productivity</span>
+                        </div> -->
+                        <h3 class="text-xl font-bold mb-2 text-white">Gravity Glider</h3>
+                        <p class="text-gray-400 mb-4 text-justify">
+                            A 2D Unity arcade game with progression, combat, custom assets, backend data persistence, and cross-platform launch on Telegram. Showcased skills in animation, UI/UX, gameplay mechanics, and distribution.
+                            
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">C#</span>
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">Unity Browser Scripting</span>
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">Postman</span>
+                        </div>
+                    </div>
+                </div>
+                            
+                            <!-- Don’t Starve – Survival Game-->
+                            <div class="portfolio-item group relative bg-gray-800 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-300"
+                                data-category="web">
+                                <div class="relative overflow-hidden">
+                                    <img src="DontStarve.png" alt="Alpharanker" 
+                                        class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300" />
+                                    <div
+                                        class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    </div>
+                                    <div class="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                        <div class="flex space-x-3">
+                                            <a href="https://drive.google.com/file/d/19QHlO6zRnmcLpj23OeTkFapofqybg-PC/view?usp=drive_link" target="_blank"
+                                                class="flex items-center justify-center w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-colors">
+                                                <i class="fab fa-google-play"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-6">
+                                    <!-- <div class="flex items-center space-x-2 mb-2">
+                                        <span class="px-2 py-1 bg-green-600/20 text-green-300 rounded text-xs font-medium">Tools</span>
+                                        <span class="px-2 py-1 bg-blue-600/20 text-blue-300 rounded text-xs font-medium">SEO</span>
+                                    </div> -->
+                                    <h3 class="text-xl font-bold mb-2 text-white">Don’t Starve – Survival Game</h3>
+                                    <p class="text-gray-400 mb-4 text-justify">
+                                       Exploration, resource gathering, and inventory systems. Built environment, integrated Mixamo animations, and implemented movement, interaction, and survival mechanics for a complete, immersive gameplay loop.
+                                    </p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">C#</span>
+                                        <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">Mixamo</span>
+                                        <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">Observer Patterns</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Line Run -->
+                            <div class="portfolio-item group relative bg-gray-800 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-300"
+                                data-category="mobile">
+                                <div class="relative overflow-hidden">
+                                    <img src="LineRun.png" alt="WhatsUp"
+                                        class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300" />
+                                    <div
+                                        class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    </div>
+                                    <div class="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                        <div class="flex space-x-3">
+                                            <a href="https://drive.google.com/file/d/1FY0IDK9zTMPYeUx9L3wZji7kvMpQudXh/view?usp=sharing" target="_blank"
+                                    class="flex items-center justify-center w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-colors">
+                                    <i class="fab fa-google-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <!-- <div class="flex items-center space-x-2 mb-2">
+                            <span
+                                class="px-2 py-1 bg-primary-600/20 text-primary-300 rounded text-xs font-medium">Mobile</span>
+                            <span class="px-2 py-1 bg-yellow-600/20 text-yellow-300 rounded text-xs font-medium">Finance</span>
+                        </div> -->
+                        <h3 class="text-xl font-bold mb-2 text-white">Line Run</h3>
+                        <p class="text-gray-400 mb-4">
+                            A Unity stickman running game featuring clone army mechanics, obstacle-based challenges, ally collection, and strategic survival gameplay. Designed engaging levels and mechanics to deliver fun, skill-based progression and replayability.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">C#</span>
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">PlayerPrefs</span>
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">Animators</span>
+                            </div>
+                            </div>
+                            </div>
+                            
+                            <!-- Bab ul Islam Project -->
+                            <!-- <div class="portfolio-item group relative bg-gray-800 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-300"
+                                data-category="mobile">
+                                <div class="relative overflow-hidden">
+                                    <img src="https://images.unsplash.com/photo-1519834089823-08a494ba5a12?w=400&h=300&fit=crop" alt="Bab ul Islam"
+                                        class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300" />
+                                    <div
+                                        class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    </div>
+                                    <div class="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                        <div class="flex space-x-3">
+                                            <a href="https://play.google.com/store/apps/details?id=dev.jawadbaig.babulislam" target="_blank"
+                                                class="flex items-center justify-center w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-colors">
+                                                <i class="fab fa-google-play"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-6">
+                                    <div class="flex items-center space-x-2 mb-2">
+                                        <span class="px-2 py-1 bg-primary-600/20 text-primary-300 rounded text-xs font-medium">Mobile</span>
+                                        <span class="px-2 py-1 bg-purple-600/20 text-purple-300 rounded text-xs font-medium">Education</span>
+                                    </div>
+                                    <h3 class="text-xl font-bold mb-2 text-white">Bab ul Islam • بابُ الاِس٘لَام</h3>
+                                    <p class="text-gray-400 mb-4">
+                                        Comprehensive Islamic app with accurate prayer times, full Quran with translations in 20+
+                                        languages, Hadees,
+                                        audio recitations, and Islamic scholars content.
+                                    </p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">Flutter</span>
+                                        <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">Islamic</span>
+                                        <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">Quran</span>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Connect Platform -->
+                <!-- <div class="portfolio-item group relative bg-gray-800 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-300"
+                    data-category="web mobile">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1520333789090-1afc82db536a?w=400&h=300&fit=crop"
+                            alt="Connect Platform"
+                            class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                        <div
+                            class="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="flex space-x-3">
+                                <a href="https://connect.jawadbaig.dev" target="_blank"
+                                    class="flex items-center justify-center w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-colors">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/JawadBaig" target="_blank"
+                                    class="flex items-center justify-center w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-colors">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center space-x-2 mb-2">
+                            <span class="px-2 py-1 bg-blue-600/20 text-blue-300 rounded text-xs font-medium">Web</span>
+                            <span
+                                class="px-2 py-1 bg-primary-600/20 text-primary-300 rounded text-xs font-medium">Mobile</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-white">Connect Platform</h3>
+                        <p class="text-gray-400 mb-4">
+                            A social networking platform designed to connect professionals and foster meaningful
+                            relationships in the tech industry.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">HTML</span>
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">CSS</span>
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">JavaScript</span>
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">AJAX</span>
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">PHP</span>
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">MySQL</span>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- AlShaafi Healthcare -->
+                <!-- <div class="portfolio-item group relative bg-gray-800 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-300"
+                    data-category="mobile ai">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1585421514738-01798e348b17" alt="AlShaafi Healthcare"
+                            class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                        <div
+                            class="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="flex space-x-3">
+                                <a href="https://alshaafi.web.app" target="_blank"
+                                    class="flex items-center justify-center w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-colors">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/JawadBaig" target="_blank"
+                                    class="flex items-center justify-center w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-colors">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center space-x-2 mb-2">
+                            <span
+                                class="px-2 py-1 bg-primary-600/20 text-primary-300 rounded text-xs font-medium">Mobile</span>
+                            <span class="px-2 py-1 bg-green-600/20 text-green-300 rounded text-xs font-medium">AI</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-white">AlShaafi Healthcare App</h3>
+                        <p class="text-gray-400 mb-4">
+                            AI-powered healthcare application providing symptom analysis, doctor consultations,
+                            and health monitoring features.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">Flutter</span>
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">Dart</span>
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">Firebase</span>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+
+            <div class="text-center mt-12">
+                <!-- <a href="https://play.google.com/store/apps/dev?id=8989701639213518481" target="_blank"
+                    class="inline-flex items-center px-6 py-3 border-2 border-primary-600 text-primary-400 hover:bg-primary-600 hover:text-white rounded-lg font-medium transition-all duration-300 mr-4">
+                    <i class="fab fa-google-play mr-2"></i>
+                    View More on Play Store
+                </a>
+                <a href="https://github.com/JawadBaig" target="_blank"
+                    class="inline-flex items-center px-6 py-3 border-2 border-gray-600 text-gray-400 hover:bg-gray-600 hover:text-white rounded-lg font-medium transition-all duration-300">
+                    <i class="fab fa-github mr-2"></i>
+                    View Code on GitHub
+                </a> -->
+            </div>
+        </div>
+    </section>
+
+
     <!-- Services Section -->
-    <section id="services" class="py-20 bg-gray-800/50">
+   <section id="services" class="py-20 bg-gray-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl sm:text-4xl font-bold mb-4">

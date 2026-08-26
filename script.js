@@ -2,6 +2,7 @@
 
 // Wait for DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function () {
+    initializeTemplateVideos();
     // Initialize all features
     initializeNavigation();
     initializeThemeToggle();
@@ -11,13 +12,13 @@ document.addEventListener('DOMContentLoaded', function () {
     initializeAnimations();
     initializeCounters();
     initializeContactForm();
-    initializeAccessibility();
+    addAccessibilityFeatures();
     
     // Initialize advanced features
     initializeParticleSystem();
     initializeAdvancedAnimations();
     initializeIntersectionObserver();
-    initializeCustomCursor();
+    initializeMouseEffects();
     initializeTypingEffect();
     initializeEnhancedScrollEffects();
     
@@ -29,6 +30,69 @@ document.addEventListener('DOMContentLoaded', function () {
     initializeSkillBars();
     initializeProgressiveLoading();
 });
+
+// Play template preview videos only when the play button is clicked
+window.toggleTemplateVideo = function (button) {
+    const card = button.closest('.template-card');
+    if (!card) return;
+    const video = card.querySelector('video');
+    if (!video) return;
+
+    video.muted = true;
+    video.playsInline = true;
+    video.loop = true;
+
+    document.querySelectorAll('.template-card').forEach(function (other) {
+        if (other === card) return;
+        const otherVideo = other.querySelector('video');
+        if (otherVideo) otherVideo.pause();
+        other.classList.remove('is-playing');
+        const otherIcon = other.querySelector('.template-play-btn i');
+        if (otherIcon) {
+            otherIcon.classList.add('fa-play');
+            otherIcon.classList.remove('fa-pause');
+            otherIcon.classList.add('ml-1');
+        }
+    });
+
+    if (video.paused) {
+        const playPromise = video.play();
+        if (playPromise && typeof playPromise.then === 'function') {
+            playPromise.then(function () {
+                card.classList.add('is-playing');
+                const icon = card.querySelector('.template-play-btn i');
+                if (icon) {
+                    icon.classList.remove('fa-play', 'ml-1');
+                    icon.classList.add('fa-pause');
+                }
+            }).catch(function (error) {
+                console.error('Template video failed to play', error, video.currentSrc || video.src);
+            });
+        }
+    } else {
+        video.pause();
+        card.classList.remove('is-playing');
+        const icon = card.querySelector('.template-play-btn i');
+        if (icon) {
+            icon.classList.add('fa-play', 'ml-1');
+            icon.classList.remove('fa-pause');
+        }
+    }
+};
+
+function initializeTemplateVideos() {
+    const cards = document.querySelectorAll('.template-card');
+    cards.forEach(function (card) {
+        const video = card.querySelector('video');
+        if (!video) return;
+
+        video.muted = true;
+        video.playsInline = true;
+        video.loop = true;
+        video.preload = 'auto';
+        video.load();
+    });
+}
 
 // Navigation Functionality
 function initializeNavigation() {
@@ -752,7 +816,7 @@ function initializeInteractiveButtons() {
 
 // Magnetic card effects
 function initializeMagneticCards() {
-    const cards = document.querySelectorAll('.portfolio-item, .service-card, .card-modern');
+    const cards = document.querySelectorAll('.portfolio-item:not(.template-card), .service-card, .card-modern');
     
     cards.forEach(card => {
         card.classList.add('magnetic-card');
@@ -804,7 +868,7 @@ function initializeRippleEffects() {
 
 // Tilt effect for cards
 function initializeTiltEffect() {
-    const tiltCards = document.querySelectorAll('.portfolio-item, .service-card');
+    const tiltCards = document.querySelectorAll('.portfolio-item:not(.template-card), .service-card');
     
     tiltCards.forEach(card => {
         card.classList.add('tilt-card');

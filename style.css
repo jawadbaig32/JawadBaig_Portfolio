@@ -652,3 +652,59 @@ html {
 		background-position: 0% 50%;
 	}
 }
+
+/* App template video cards — portrait phone frame */
+.template-media {
+	position: relative;
+	width: min(100%, 280px);
+	aspect-ratio: 9 / 16;
+	margin: 1.25rem auto 0;
+	overflow: hidden;
+	background: #000;
+	border-radius: 0.75rem;
+}
+
+.template-card .template-video {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	background: #000;
+}
+
+.template-play-overlay {
+	position: absolute;
+	inset: 0;
+	z-index: 2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(0, 0, 0, 0.35);
+	border: 0;
+	padding: 0;
+	cursor: pointer;
+	transition: opacity 0.3s ease, background 0.3s ease;
+}
+
+.template-play-btn {
+	width: 3.5rem;
+	height: 3.5rem;
+	border-radius: 9999px;
+	background: rgba(34, 197, 94, 0.9);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+.template-card.is-playing .template-play-overlay {
+	opacity: 0;
+	background: transparent;
+}
+
+.template-card.is-playing .template-play-overlay:hover,
+.template-card.is-playing:hover .template-play-overlay {
+	opacity: 1;
+	background: rgba(0, 0, 0, 0.25);
+}

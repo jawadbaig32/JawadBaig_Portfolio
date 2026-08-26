@@ -444,30 +444,15 @@ Passionate about turning creative ideas into immersive player experiences.
                 </p>
             </div>
 
-            <!-- Portfolio Filter -->
-            <div class="flex flex-wrap justify-center mb-12 space-x-2 space-y-2">
-                <!-- <button class="portfolio-filter active px-6 py-2 rounded-full bg-green-600 text-white font-medium"
-                    data-filter="all">
-                     Best Games
-                </button> -->
-                <!-- <button
-                    class="portfolio-filter px-6 py-2 rounded-full bg-gray-800 text-gray-300 hover:bg-gray-700 font-medium transition-colors"
-                    data-filter="mobile">
-                    Mobile
-                </button>
-                <button
-                    class="portfolio-filter px-6 py-2 rounded-full bg-gray-800 text-gray-300 hover:bg-gray-700 font-medium transition-colors"
-                    data-filter="web">
-                    Web
-                </button>
-                <button
-                    class="portfolio-filter px-6 py-2 rounded-full bg-gray-800 text-gray-300 hover:bg-gray-700 font-medium transition-colors"
-                    data-filter="ai">
-                    AI
-                </button> -->
+            <!-- Games Heading -->
+            <div class="flex items-center gap-4 mb-10">
+                <h3 class="text-2xl sm:text-3xl font-bold whitespace-nowrap">
+                    <i class="fas fa-gamepad text-green-400 mr-3"></i>Games
+                </h3>
+                <div class="h-px flex-1 bg-gradient-to-r from-green-500/50 to-transparent"></div>
             </div>
 
-            <!-- Portfolio Grid -->
+            <!-- Games Grid -->
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- City Building Tycoon-->
                 <div class="portfolio-item group relative bg-gray-800 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-300 hover-lift"
@@ -803,17 +788,111 @@ Passionate about turning creative ideas into immersive player experiences.
                 </div> -->
             </div>
 
-            <div class="text-center mt-12">
-                <!-- <a href="https://play.google.com/store/apps/dev?id=8989701639213518481" target="_blank"
-                    class="inline-flex items-center px-6 py-3 border-2 border-primary-600 text-primary-400 hover:bg-primary-600 hover:text-white rounded-lg font-medium transition-all duration-300 mr-4">
-                    <i class="fab fa-google-play mr-2"></i>
-                    View More on Play Store
-                </a>
-                <a href="https://github.com/JawadBaig" target="_blank"
-                    class="inline-flex items-center px-6 py-3 border-2 border-gray-600 text-gray-400 hover:bg-gray-600 hover:text-white rounded-lg font-medium transition-all duration-300">
-                    <i class="fab fa-github mr-2"></i>
-                    View Code on GitHub
-                </a> -->
+            <!-- App Templates Heading -->
+            <div class="flex items-center gap-4 mt-20 mb-10">
+                <h3 class="text-2xl sm:text-3xl font-bold whitespace-nowrap">
+                    <i class="fas fa-mobile-alt text-green-400 mr-3"></i>App Templates
+                </h3>
+                <div class="h-px flex-1 bg-gradient-to-r from-green-500/50 to-transparent"></div>
+            </div>
+
+            <!-- App Templates Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Rope Rotation -->
+                <div class="portfolio-item template-card group relative bg-gray-800 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-300 hover-lift"
+                    data-category="template">
+                    <div class="template-media">
+                        <video class="template-video"
+                            src="Videos/templates/rope-rotation.mp4"
+                            muted loop playsinline preload="auto"
+                            aria-label="Rope Rotation template preview"></video>
+                        <button type="button" class="template-play-overlay" aria-label="Play Rope Rotation preview"
+                            onclick="toggleTemplateVideo(this)">
+                            <span class="template-play-btn">
+                                <i class="fas fa-play ml-1"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center space-x-2 mb-2">
+                            <span class="px-2 py-1 bg-green-600/20 text-green-300 rounded text-xs font-medium">Template</span>
+                            <span class="px-2 py-1 bg-blue-600/20 text-blue-300 rounded text-xs font-medium">Hyper-Casual</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-white">Rope Rotation</h3>
+                        <p class="text-gray-400 mb-4 text-justify">
+                            A Unity hyper-casual template built around rope physics and rotation-based gameplay. Ready to customize with your own art, levels, and monetization.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">Unity</span>
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">C#</span>
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">Physics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IQ App for Kids -->
+                <div class="portfolio-item template-card group relative bg-gray-800 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-300 hover-lift"
+                    data-category="template">
+                    <div class="template-media">
+                        <video class="template-video"
+                            src="Videos/templates/iq-app-for-kids.mp4"
+                            muted loop playsinline preload="auto"
+                            aria-label="IQ App for kids template preview"></video>
+                        <button type="button" class="template-play-overlay" aria-label="Play IQ App for Kids preview"
+                            onclick="toggleTemplateVideo(this)">
+                            <span class="template-play-btn">
+                                <i class="fas fa-play ml-1"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center space-x-2 mb-2">
+                            <span class="px-2 py-1 bg-green-600/20 text-green-300 rounded text-xs font-medium">Template</span>
+                            <span class="px-2 py-1 bg-purple-600/20 text-purple-300 rounded text-xs font-medium">Education</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-white">IQ App for Kids</h3>
+                        <p class="text-gray-400 mb-4 text-justify">
+                            An educational kids app template with IQ challenges, colorful UI, and age-friendly interactions designed to make learning fun and engaging.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">Unity</span>
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">C#</span>
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">UI/UX</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gym Branding App -->
+                <div class="portfolio-item template-card group relative bg-gray-800 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-300 hover-lift"
+                    data-category="template">
+                    <div class="template-media">
+                        <video class="template-video"
+                            src="Videos/templates/gym-branding-app.mp4"
+                            muted loop playsinline preload="auto"
+                            aria-label="Gym Branding App template preview"></video>
+                        <button type="button" class="template-play-overlay" aria-label="Play Gym Branding App preview"
+                            onclick="toggleTemplateVideo(this)">
+                            <span class="template-play-btn">
+                                <i class="fas fa-play ml-1"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center space-x-2 mb-2">
+                            <span class="px-2 py-1 bg-green-600/20 text-green-300 rounded text-xs font-medium">Template</span>
+                            <span class="px-2 py-1 bg-yellow-600/20 text-yellow-300 rounded text-xs font-medium">Fitness</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-white">Gym Branding App</h3>
+                        <p class="text-gray-400 mb-4 text-justify">
+                            A fitness branding app template for gyms and trainers, with a polished UI for showcasing services, memberships, and brand identity.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">Unity</span>
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">C#</span>
+                            <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">Branding</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -1638,7 +1717,48 @@ Passionate about turning creative ideas into immersive player experiences.
     </footer>
 
     <!-- Custom JavaScript -->
-    <script src="script.js"></script>
+    <script>
+    function toggleTemplateVideo(button) {
+        var card = button.closest('.template-card');
+        if (!card) return;
+        var video = card.querySelector('video');
+        if (!video) return;
+
+        video.muted = true;
+        video.playsInline = true;
+        video.loop = true;
+
+        document.querySelectorAll('.template-card').forEach(function (other) {
+            if (other === card) return;
+            var otherVideo = other.querySelector('video');
+            if (otherVideo) otherVideo.pause();
+            other.classList.remove('is-playing');
+            var otherIcon = other.querySelector('.template-play-btn i');
+            if (otherIcon) {
+                otherIcon.className = 'fas fa-play ml-1';
+            }
+        });
+
+        if (video.paused) {
+            var playPromise = video.play();
+            if (playPromise && typeof playPromise.then === 'function') {
+                playPromise.then(function () {
+                    card.classList.add('is-playing');
+                    var icon = card.querySelector('.template-play-btn i');
+                    if (icon) icon.className = 'fas fa-pause';
+                }).catch(function () {
+                    card.classList.remove('is-playing');
+                });
+            }
+        } else {
+            video.pause();
+            card.classList.remove('is-playing');
+            var icon = card.querySelector('.template-play-btn i');
+            if (icon) icon.className = 'fas fa-play ml-1';
+        }
+    }
+    </script>
+    <script src="script.js?v=2"></script>
     <script>
     function downloadResume() {
     window.open(
